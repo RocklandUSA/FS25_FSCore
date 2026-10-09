@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the mod
+    url: https://www.farming-simulator.com/mods.php
+    about: FSCore is distributed only through the official GIANTS ModHub. The mod is not available from this repository.
+  - name: Server Installation and First Start
+    url: https://github.com/RocklandUSA/FS25_FSCore/blob/main/docs/for-admins/INSTALL.md
+    about: Install on a dedicated server, what happens on the first load, where the admin files live.
+  - name: Server Settings Reference
+    url: https://github.com/RocklandUSA/FS25_FSCore/blob/main/docs/for-admins/SETTINGS.md
+    about: Every rule on the FSCore Settings page, what it does and its default.
+  - name: Console Command Reference
+    url: https://github.com/RocklandUSA/FS25_FSCore/blob/main/docs/for-admins/CONSOLE_COMMANDS.md
+    about: Optional admin and troubleshooting commands, grouped by subsystem.

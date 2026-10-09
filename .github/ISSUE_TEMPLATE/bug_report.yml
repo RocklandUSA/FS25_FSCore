@@ -1,0 +1,103 @@
+name: Bug Report
+description: Report something that is not working the way the documentation says it should.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The fields below are the minimum needed to act on the report.
+  - type: input
+    id: fscore_version
+    attributes:
+      label: FSCore version
+      description: Shown in the in-game mod menu and on the FSCore Settings page.
+      placeholder: "1.0.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Farming Simulator 25 version
+      placeholder: "1.24.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does the bug happen?
+      multiple: true
+      options:
+        - Singleplayer
+        - Multiplayer (player-hosted)
+        - Multiplayer (dedicated server, as a player)
+        - Multiplayer (dedicated server, server side)
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which part of FSCore?
+      multiple: true
+      options:
+        - Identity / character creation
+        - Phone and apps
+        - Money, banking, ATM, bills
+        - Farm Manager / hiring
+        - Jobs and deliveries
+        - Inventory, crates, lockers, crafting
+        - Needs (hunger / thirst)
+        - Vehicles, keys, licenses, dealership, garage, rentals
+        - Fishing / boating
+        - Farm dogs
+        - Scavenging / salvaging
+        - Clothing
+        - Settings page / server rules
+        - Admin Hub / moderation
+        - Compass, doors, zones, welcome boards
+        - Something else
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: A short numbered list. What did you do, what did you expect, what happened instead?
+      placeholder: |
+        1. Start a new save in singleplayer
+        2. Open the phone with /
+        3. Open the Finance app
+        4. Expected: ...
+        5. Observed: ...
+    validations:
+      required: true
+  - type: textarea
+    id: client_log
+    attributes:
+      label: Client log.txt excerpt
+      description: |
+        Located at `Documents\My Games\FarmingSimulator2025\log.txt`. Paste the lines containing `[FSCore`, `Error:`, `Warning:` or `attempt to` from the session where the bug occurred.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: server_log
+    attributes:
+      label: Dedicated server log excerpt (if applicable)
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other active mods
+      description: List other mods that may touch the same feature (maps, vehicles, UI mods).
+    validations:
+      required: false
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched the existing issues and did not find a duplicate.
+          required: true

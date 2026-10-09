@@ -1,0 +1,41 @@
+name: Server Admin Help
+description: You are setting up an FSCore server and have a question the docs did not cover.
+title: "[Admin] "
+labels: ["admin-help", "docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please check the [install guide](../blob/main/docs/for-admins/INSTALL.md), the [settings reference](../blob/main/docs/for-admins/SETTINGS.md) and the [console command reference](../blob/main/docs/for-admins/CONSOLE_COMMANDS.md). If the answer is there, great. If it is not, that is a documentation bug: file it here and we will improve the guide.
+  - type: dropdown
+    id: server_type
+    attributes:
+      label: Server type
+      options:
+        - Singleplayer
+        - Player-hosted multiplayer
+        - Dedicated server (self-hosted)
+        - Dedicated server (managed host such as G-Portal)
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to accomplish?
+      description: For example "set a new server name and house rules", "change the starting cash", "turn fishing off", "make myself the owner of a farm".
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Which docs you read, which settings or commands you used, what happened.
+    validations:
+      required: true
+  - type: input
+    id: fscore_version
+    attributes:
+      label: FSCore version
+      placeholder: "1.0.0.0"
+    validations:
+      required: true

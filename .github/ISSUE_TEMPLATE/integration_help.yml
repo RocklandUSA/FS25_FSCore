@@ -1,0 +1,43 @@
+name: Integration Help (Mod Authors)
+description: You are building a mod that talks to FSCore through its public API and hit a snag.
+title: "[Integration] "
+labels: ["integration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        FSCore's public API lives at `g_currentMission.FSCore.*`. Please read the [modder notes](../blob/main/docs/for-modders/README.md) first and name the subsystem you are working with (Economy, Identity, Inventory, Reputation, Needs, Phone, ...).
+  - type: input
+    id: your_mod
+    attributes:
+      label: Your mod's name
+      description: Optional.
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The Lua you tried
+      render: lua
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include the relevant log.txt lines.
+    validations:
+      required: true
+  - type: input
+    id: fscore_version
+    attributes:
+      label: FSCore version
+      placeholder: "1.0.0.0"
+    validations:
+      required: true

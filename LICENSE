@@ -1,0 +1,87 @@
+FSCore — Farming Simulator 25 Rural Life Simulation Framework
+
+Copyright (C) 2026 RocklandUSA Gaming. All rights reserved.
+
+===========================================================================
+LICENSE TERMS
+===========================================================================
+
+This software, including all source code (Lua, XML, configuration data),
+asset files, descriptions, in-game text, documentation, and any other
+materials included in the FSCore package (collectively, "the Work"), is
+the proprietary work of RocklandUSA Gaming.
+
+Permission is granted to:
+
+  (a) DOWNLOAD AND USE the Work in unmodified form on any single-player
+      or multiplayer Farming Simulator 25 installation, including
+      dedicated servers, for personal or community gameplay purposes.
+
+  (b) WRITE AND DISTRIBUTE companion / satellite mods that interact with
+      the Work strictly through its declared public APIs (the FSCore.API,
+      FSCoreNeeds.API, FSCoreReputation.API, FSCoreRPJobs.API,
+      FSCoreFarmManager.API, FSCoreEconomy.API, and any other API
+      surface explicitly published by FSCore). Such companion mods may
+      be released under any license of the companion mod author's
+      choosing, provided the companion mod does not embed or redistribute
+      any portion of the Work itself.
+
+The following actions are PROHIBITED without prior express written
+permission from RocklandUSA Gaming:
+
+  1. Copying any portion of the Work's source code, asset files, or
+     other materials for inclusion in another mod, framework, library,
+     or project, whether released publicly or used privately.
+
+  2. Modifying, adapting, translating, or creating derivative works based
+     on the Work or any portion of it.
+
+  3. Redistributing the Work, or any portion of it, by any means other
+     than the official ModHub release channel or direct download from
+     channels operated by RocklandUSA Gaming.
+
+  4. Removing, altering, or obscuring any copyright notice, license
+     header, attribution, version identifier, or other proprietary
+     marking present in the Work.
+
+  5. Reverse-engineering, decompiling, or porting the Work (in whole or
+     in part) to any other game version, engine, or platform.
+
+  6. Using the Work as a basis for a competing framework, satellite
+     ecosystem, or "fork" intended to supplant or fragment the FSCore
+     ecosystem.
+
+===========================================================================
+COMPANION-MOD-FRIENDLY PUBLIC APIs
+===========================================================================
+
+To enable a healthy companion-mod ecosystem, FSCore deliberately exposes
+a public API surface under the `FSCore.API` table and the per-subsystem
+`FSCore<Subsystem>.API` tables. Companion mod authors are encouraged to
+build on these APIs. The API call signatures and event-bus contracts are
+the supported integration surface.
+
+Building a companion mod that calls FSCore.API.*, subscribes to
+FSCore.subscribe(...), or registers via the documented extension points
+(role registration, satellite namespace registration, etc.) does NOT
+constitute "copying any portion of the Work" under section 1 above.
+The API itself is the integration boundary.
+
+===========================================================================
+NO WARRANTY
+===========================================================================
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES,
+OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORK
+OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+===========================================================================
+CONTACT FOR PERMISSION
+===========================================================================
+
+To request permission for any use not granted above, contact
+RocklandUSA Gaming through the channels listed in the mod description on
+GIANTS ModHub.
+
+===========================================================================
