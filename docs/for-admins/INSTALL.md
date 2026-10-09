@@ -45,7 +45,7 @@ Open the pause menu and the **FSCore** tab. The page has these groups: Features,
 | `items.xml` | The inventory item list: names, weights, icons |
 | `welcomePackage.xml` | The starter package new players receive |
 | `salvaging.xml` | Salvaging buyers and prices |
-| `licenses.xml` | Which vehicle classes need which license, and whether administrators are exempt |
+| `licenses.xml` (this one lives in `modSettings\FS25_FSCore\`) | Which vehicle classes need which license (farm machinery, road trucks, forestry) and whether administrators are exempt |
 
 FSCore writes the defaults on the first load. Edit the copy in `modSettings`, then reload with the matching console command (for example `fscDealerCatalogReload`, `fscItemsReload`) or restart the server. ModHub updates never overwrite these files; new default entries are appended once.
 
