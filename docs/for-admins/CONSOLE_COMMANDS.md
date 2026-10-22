@@ -2,7 +2,7 @@
 
 FSCore does not need any console command to play: the mod sets itself up on the first load. These commands are optional administration and troubleshooting tools. They require Farming Simulator's developer console (enable it in `game.xml`, then press the console key in game). Commands that change server state, other players' data or the world are admin-only; a non-admin player can only read their own data.
 
-Total: **416 commands**, grouped by subsystem.
+Total: **434 commands**, grouped by subsystem.
 
 ## Admin Hub
 
@@ -19,7 +19,7 @@ Total: **416 commands**, grouped by subsystem.
 | `fscModContact` | FSCore: fscModContact <text> - appeal/contact line shown to banned players |
 | `fscModLog` | FSCore: print the last 100 moderation actions |
 | `fscModeration` | FSCore: open the Moderation panel (admin) |
-| `fscMyId` | FSCore: Open My ID — licenses, specialization and skill ranks |
+| `fscMyId` | FSCore: Open My ID — licences, specialization and skill ranks |
 | `fscPlayerHub` | FSCore: Open the Player Hub — the F6 directory of player tools |
 | `fscResetServer` | FSCore: Clear the server_initialized flag so fscInitServer can re-run |
 | `fscSaveFarms` | FSCore: Write faction names directly to farms.xml for persistence |
@@ -128,8 +128,16 @@ Total: **416 commands**, grouped by subsystem.
 
 | Command | Description |
 |---|---|
+| `fscBackupRestore` | FSCore: Restore a restart backup at the next start. Usage: fscBackupRestore <n> (0 cancels) |
+| `fscBackups` | FSCore: List the restart backups (FSCore data + farm money at each of the last 3 starts) |
 | `fscDump` | FSCore: Dump namespace data. Usage: fscDump namespace [farmId] |
 | `fscGet` | FSCore: Get a value. Usage: fscGet namespace key [farmId] |
+| `fscLayoutApply` | FSCore: Queue a layout for this save - it goes in at the next start. 'places' = only where things stand (keeps rules, economy, players). Usage: fscLayoutApply [name] [places] |
+| `fscLayoutExport` | FSCore: Export this world's layout (NPCs, zones, kiosks, boards, catalogs, rules) to modSettings/FS25_FSCore/layouts/<name>.xml. Usage: fscLayoutExport [name] |
+| `fscLayoutInfo` | FSCore: Which layout file this map would use and whether one was applied |
+| `fscLoanClear` | FSCore (admin): remove one loan record. Usage: fscLoanClear <loanId> (see fscLoans) |
+| `fscLoans` | FSCore (admin): list every loan on the server |
+| `fscPerf` | FSCore: server performance paths on/off - off restores the original behaviour (fscPerf on/off) |
 | `fscSave` | FSCore: Force immediate save |
 | `fscStatus` | FSCore: Show status and registered namespaces |
 
@@ -164,7 +172,7 @@ Total: **416 commands**, grouped by subsystem.
 | `fscDealerOwned` | Usage: fscDealerOwned <userId/me> |
 | `fscDealerProcessPayments` | Force the weekly payment-processing tick now (debug). |
 | `fscDealerPurgeFlags` | Scrub orphan transient marker flags around the dealership kiosk. Usage: fscDealerPurgeFlags [radius_m] (default 100m). |
-| `fscDealershipAdmin` | Open the Dealership admin panel (kiosk placement + per-vehicle MSRP overrides). |
+| `fscDealershipAdmin` | Open the Dealership admin panel (kiosk placement + per-vehicle list price overrides). |
 
 ## Diagnostics
 
@@ -208,7 +216,7 @@ Total: **416 commands**, grouped by subsystem.
 | `fscBankList` | FSCore: List all registered Bank locations |
 | `fscBankNear` | FSCore: Show nearest Bank to your position |
 | `fscCoords` | FSCore: Show player world coordinates |
-| `fscEconBankAdd` | FSCore (admin): Deposit to checking. Usage: fscEconBankAdd <userId/me> <amount> |
+| `fscEconBankAdd` | FSCore (admin): Deposit to current account. Usage: fscEconBankAdd <userId/me> <amount> |
 | `fscEconCashAdd` | FSCore (admin): Grant cash. Usage: fscEconCashAdd <userId/me> <amount> |
 | `fscEconReconstructLoans` | FSCore (admin): Walk Dealership.owned and re-create any DealershipLoan whose loanId is missing from LoanManager (recovers orphaned references from saves predating the loan-persistence fix). |
 | `fscEconSave` | FSCore: Force an immediate save of all economy data |
@@ -218,7 +226,7 @@ Total: **416 commands**, grouped by subsystem.
 
 | Command | Description |
 |---|---|
-| `fscATMAdmin` | FSCore: Open the ATM placement admin panel |
+| `fscATMAdmin` | FSCore: Open the Map Essentials panel (ATMs, vending machines, trash cans) |
 | `fscATMScan` | FSCore: find every ATM on the map and give it a prompt |
 
 ## Employment
@@ -292,6 +300,13 @@ Total: **416 commands**, grouped by subsystem.
 | `fscFishSellerRemove` | Usage: fscFishSellerRemove -- remove the Fish Seller NPC |
 | `fscFishSoundTest` | FSCore Fishing: play the mod sounds directly (cast/splash/reel/reel3s/all) |
 
+## Foraging
+
+| Command | Description |
+|---|---|
+| `fscForageCheck` | FSCore: is this spot mushroom woods? + season status |
+| `fscForageHere` | FSCore (admin): grow a mushroom cluster next to you: fscForageHere [chanterelle/porcini/morel] |
+
 ## Garage
 
 | Command | Description |
@@ -309,12 +324,12 @@ Total: **416 commands**, grouped by subsystem.
 | Command | Description |
 |---|---|
 | `fscCreateIdentity` | FSCore: Force-open the character creation overlay |
-| `fscGrantLicense` | FSCore: Admin grant license. Usage: fscGrantLicense <userId/stateId/me> <licenseId> |
+| `fscGrantLicense` | FSCore: Admin grant licence. Usage: fscGrantLicense <userId/stateId/me> <licenseId> |
 | `fscIdentity` | FSCore: Show your identity card |
 | `fscIdentityProbe` | FSCore: Identity diagnostic dump |
 | `fscIdentityReset` | FSCore: Reset your identity (debug) |
-| `fscLicenses` | FSCore: List your licenses |
-| `fscRevokeLicense` | FSCore: Admin revoke license. Usage: fscRevokeLicense <userId/stateId/me> <licenseId> |
+| `fscLicenses` | FSCore: List your licences |
+| `fscRevokeLicense` | FSCore: Admin revoke licence. Usage: fscRevokeLicense <userId/stateId/me> <licenseId> |
 
 ## Interaction
 
@@ -349,9 +364,10 @@ Total: **416 commands**, grouped by subsystem.
 | Command | Description |
 |---|---|
 | `fscClearProps` | Remove all spawned props (optionally filter: fscClearProps [kind]) |
+| `fscClothesLockerHere` | Place a clothing locker (change into saved outfits) at your position |
 | `fscContainerRecall` | Recall a container pallet to your position: fscContainerRecall [id/label/type] (nearest if omitted) |
-| `fscInvBuyFridge` | Buy refrigerator storage at current spot ($8000, 75kg, 1 per player): fscInvBuyFridge [label] |
-| `fscInvBuyShelves` | Buy shelves storage at current spot ($5000, 100kg, 1 per player): fscInvBuyShelves [label] |
+| `fscInvBuyFridge` | Buy refrigerator storage at current spot (price 8000, 75kg, 1 per player): fscInvBuyFridge [label] |
+| `fscInvBuyShelves` | Buy shelves storage at current spot (price 5000, 100kg, 1 per player): fscInvBuyShelves [label] |
 | `fscInvClearPin` | Clear PIN on nearest crate |
 | `fscInvContainerNear` | Show nearest container |
 | `fscInvContainers` | List all world containers |
@@ -393,9 +409,9 @@ Total: **416 commands**, grouped by subsystem.
 | `fscJunkList` | List junk offers, claimed piles + settings |
 | `fscJunkPay` | Set junk pay: fscJunkPay <itemPay> <bonusPct> |
 | `fscJunkSpawn` | Create a junk cleanup offer: fscJunkSpawn [here/zoneName] |
-| `fscMiniJobsActive` | Dump active CowDash deliveries + dropoff point status |
+| `fscMiniJobsActive` | Dump active Farm Eats deliveries + dropoff point status |
 | `fscMiniJobsAdd` | Add a pickup site of any registered job type at your position:  |
-| `fscMiniJobsClearCooldowns` | Clear CowDash cooldowns: fscMiniJobsClearCooldowns [all/decline/completion] |
+| `fscMiniJobsClearCooldowns` | Clear Farm Eats cooldowns: fscMiniJobsClearCooldowns [all/decline/completion] |
 | `fscMiniJobsClearScanLocations` | Wipe scan-added delivery locations (manual entries kept):  |
 | `fscMiniJobsDeliveryAdmin` | Open the MiniJobs Delivery admin panel |
 | `fscMiniJobsList` | List all pickup sites (id, type, label, position) |
@@ -404,6 +420,11 @@ Total: **416 commands**, grouped by subsystem.
 | `fscMiniJobsScanLocations` | Scan map for houses + production points and add as delivery locations:  |
 | `fscMiniJobsSweep` | Force a stale-delivery sweep right now: fscMiniJobsSweep [ttlSeconds] |
 | `fscMiniJobsTypes` | List registered job types + their cargo/addon config |
+| `fscWashClear` | Admin: clear the power-wash board and the washed list |
+| `fscWashGrime` | Look test: grime on the washable building nearest you: fscWashGrime <0..1/off> |
+| `fscWashList` | List power-wash offers |
+| `fscWashOffer` | Admin: put the washable building nearest you on the Giggit board |
+| `fscWashScan` | List the washable public buildings, nearest first |
 
 ## Needs
 
@@ -438,12 +459,12 @@ Total: **416 commands**, grouped by subsystem.
 | `fscPetBonus` | FSCore Pets: set the dog farm-duty animal bonus % (0-100) |
 | `fscPetBowl` | FSCore Pets: place / pick up the dog bowl |
 | `fscPetBreed` | FSCore Pets: 1 Labrador / 2 Border Collie |
-| `fscPetCoat` | FSCore Pets: set coat for current breed |
+| `fscPetCoat` | FSCore Pets: set coat for current dog type |
 | `fscPetDismiss` | FSCore Pets: remove your dog |
 | `fscPetMP` | FSCore Pets: print MP diagnostic state (run on client AND server) |
 | `fscPetMPSpike` | FSCore Pets: [SERVER] spike-test whether the companion behaves server-side |
 | `fscPetNeed` | FSCore Pets: set a need low (hunger/thirst/happy/all) [value] |
-| `fscPetPrice` | FSCore Pets: set a Pet Store price — fscPetPrice <id> <price> |
+| `fscPetPrice` | FSCore Pets: set a Pet Shelter price — fscPetPrice <id> <price> |
 | `fscPetPurgeUser` | FSCore Pets: [SERVER] delete a user's pet data — fscPetPurgeUser <uniqueUserId> |
 | `fscPetRecover` | FSCore Pets: un-stick a glitched/invisible dog (re-seat + show) |
 | `fscPetRide` | FSCore Pets: tune ride offset x y z [headingDeg] |
@@ -451,7 +472,8 @@ Total: **416 commands**, grouped by subsystem.
 | `fscPetRideSave` | FSCore Pets: save ride offsets to modSettings |
 | `fscPetRideScan` | FSCore Pets: preload ride offsets for all shop vehicles (collie default) |
 | `fscPetShop` | FSCore Pets: [TEST] grant/reset dog+bed+bowl ownership (arg: reset to lock) |
-| `fscPetStoreEdit` | FSCore Pets: open the Pet Store seller placement/clothing editor |
+| `fscPetStoreEdit` | FSCore Pets: open the Pet Shelter seller placement/clothing editor |
+| `fscPetStumpProbe` | FSCore Pets: list every tree piece near you and whether the dog counts it as a stump: fscPetStumpProbe [radius] |
 
 ## Phone
 
@@ -553,6 +575,8 @@ Total: **416 commands**, grouped by subsystem.
 | `fscServicesVendingList` | FSCore: List every node the vending scanner has matched, with its name + position |
 | `fscServicesVendingReset` | FSCore: Remove all scanner-registered vending/cooler locations and clear the scanner cache (use to retune patterns) |
 | `fscServicesVendingScan` | FSCore: Scan the map for vending machines / coolers and auto-register each as a general store |
+| `fscVendingHideNear` | FSCore: Hide the vending machine nearest you (decor / unreachable) - never registered again, saved with the map layout. Usage: fscVendingHideNear [radiusM=25] |
+| `fscVendingUnhideAll` | FSCore: Bring back every hidden vending machine (they register on the next scan / restart) |
 
 ## SimpliBarn (barn cameras)
 
@@ -564,7 +588,7 @@ Total: **416 commands**, grouped by subsystem.
 
 | Command | Description |
 |---|---|
-| `fscEmote` | FSCore: play an emote. Usage: fscEmote <wave/point/crossed/hips/shrug/think/salute/clap/lean/stop> |
+| `fscEmote` | FSCore: play an emote. Usage: fscEmote <wave/crossed/hips/shrug/think/salute/clap/lean/stop> |
 | `fscSitHeight` | FSCore: tune the seated height. Usage: fscSitHeight <metres> |
 
 ## Chat commands
@@ -600,8 +624,8 @@ Total: **416 commands**, grouped by subsystem.
 
 | Command | Description |
 |---|---|
-| `fscLicense` | FSCore: Admin license. Usage: fscLicense <userId/stateId/me> grant/revoke/show <car/tractor/heavy/licenseId> |
-| `fscLicenseClass` | FSCore: Which license the vehicle you're in (or nearest) needs, and why |
+| `fscLicense` | FSCore: Admin licence. Usage: fscLicense <userId/stateId/me> grant/revoke/show <car/tractor/heavy/licenseId> |
+| `fscLicenseClass` | FSCore: Which licence the vehicle you're in (or nearest) needs, and why |
 | `fscLicenseReload` | FSCore: Admin re-read modSettings/FS25_FSCore/licenses.xml and push it to all clients |
 | `fscVehicleKey` | FSCore: Give spare key. Usage: fscVehicleKey <stateId> |
 | `fscVehicleKeyRevoke` | FSCore: Revoke spare key. Usage: fscVehicleKeyRevoke <stateId> |
@@ -659,9 +683,8 @@ Total: **416 commands**, grouped by subsystem.
 | Command | Description |
 |---|---|
 | `fscBoar` | Wild boar: fscBoar — list detected boar herds + whether on your land |
-| `fscEMSHospital` | Hospitals: fscEMSHospital add/remove/list [args] |
 | `fscLand` | Land ownership: fscLand [farmId] — owned parcels + fields |
-| `fscPoliceZone` | Speed zones: fscPoliceZone add/remove/list/probe [args] |
+| `fscSpeedZone` | Speed zones: fscSpeedZone add/remove/list/probe [args] |
 | `fscWorld` | World state: fscWorld [domain] |
 | `fscWorldAnimals` | Animal/husbandry summary |
 | `fscWorldPlayers` | Connected player summary |

@@ -7,6 +7,7 @@ Everything you need to install, configure and run a server with FSCore.
 | **[INSTALL.md](INSTALL.md)** | Installing on a dedicated server, what happens on the first load, the admin files in `modSettings`, troubleshooting |
 | **[SETTINGS.md](SETTINGS.md)** | Every rule on the FSCore Settings page, what it does and its default |
 | **[CONSOLE_COMMANDS.md](CONSOLE_COMMANDS.md)** | The optional `fsc*` console commands, grouped by subsystem |
+| **[SERVER_LOGO.md](SERVER_LOGO.md)** | Putting your community's logo on the arrivals screen |
 
 ## Quick start
 
