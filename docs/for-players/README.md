@@ -44,15 +44,14 @@ Not every app is present on every server: a module that the administrator switch
 | `F10` or `Alt` + `I` | Open the inventory backpack |
 | `R` | Interact with kiosks, boards, ATMs, doors and items on the ground |
 | `F9` | Radial menu |
-| `Ctrl` + `B` | Banking menu |
+| `F6` | Admin Hub (administrators only) |
 | `Ctrl` + `H` | Toggle the money display |
-| `Delete` | Toggle the economy HUD |
 
 All bindings can be changed in the game's input settings. The phone key is also shown in the F1 help.
 
 ## Things worth knowing
 
-- **Money is personal and farm money is separate.** Your wallet and your bank accounts are yours. The farm account is the normal Farming Simulator account. ATMs and the banking menu move money between them.
+- **Money is personal and farm money is separate.** Your wallet and your bank accounts are yours. The farm account is the normal Farming Simulator account. The phone's Finances app moves money between your accounts, and ATMs handle cash.
 - **Hunger and thirst** drain slowly. Eat and drink from the inventory; food comes from stores, crafting and the starter package. The HUD warns you when you run low.
 - **Licenses** gate some things: a fishing license for fishing, a tractor or heavy equipment license for vehicles when the server has that rule on, a marine license for boats. Training takes game time and costs a fee; you apply from the Identity app.
 - **Farm dogs** can follow you, patrol, ride along and work on farm duty, which gives animal pens a production bonus when the dog is fed and happy.

@@ -40,7 +40,7 @@
 Everything is in this one mod.
 
 - **Character identity:** a profile with name, date of birth and specialization, an ID card and licenses
-- **Personal money:** a cash wallet and personal bank accounts (checking, savings, business) next to the normal farm account, with ATMs, a banking menu, loans, credit score, invoices, taxes and payroll
+- **Personal money:** a cash wallet and personal bank accounts (checking, savings, business) next to the normal farm account, with ATMs, loans, credit score, invoices, taxes and payroll
 - **Work:** time-clock kiosks with hourly pay, mini jobs (bakery and pizza deliveries, junk cleanup) and a bulletin board for player postings
 - **Farm management:** member roles, permissions and block lists; eight preset farms with names, colors and starting balances that are set up automatically on first load
 - **Needs:** hunger and thirst with food from the inventory backpack, weight limits, carryable crates, coolers and lockers, and crafting stations
@@ -71,9 +71,7 @@ FSCore does not monitor or track anyone. Every server owner decides their own ru
 | `R` | Interact with kiosks, boards, ATMs, doors and items |
 | `F9` | Radial menu |
 | `F6` | Admin Hub (administrators only) |
-| `Ctrl` + `B` | Banking menu |
 | `Ctrl` + `H` | Toggle the money display |
-| `Delete` | Toggle the economy HUD |
 
 All bindings can be changed in the game's input settings.
 
