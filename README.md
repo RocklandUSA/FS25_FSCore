@@ -67,13 +67,12 @@ FSCore does not monitor or track anyone. Every server owner decides their own ru
 | Key | What it does |
 |---|---|
 | `/` (also numpad `/`) | Open or close the phone |
-| `I` | Open the inventory backpack |
+| `F10` or `Alt` + `I` | Open the inventory backpack |
 | `R` | Interact with kiosks, boards, ATMs, doors and items |
-| `O` | Radial menu |
+| `F9` | Radial menu |
 | `F6` | Admin Hub (administrators only) |
 | `Ctrl` + `B` | Banking menu |
 | `Ctrl` + `H` | Toggle the money display |
-| `Ctrl` + `J` | Jobs and payroll |
 | `Delete` | Toggle the economy HUD |
 
 All bindings can be changed in the game's input settings.

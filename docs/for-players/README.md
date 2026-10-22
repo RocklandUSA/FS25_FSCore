@@ -41,12 +41,11 @@ Not every app is present on every server: a module that the administrator switch
 | Key | What it does |
 |---|---|
 | `/` | Open or close the phone |
-| `I` | Open the inventory backpack |
+| `F10` or `Alt` + `I` | Open the inventory backpack |
 | `R` | Interact with kiosks, boards, ATMs, doors and items on the ground |
-| `O` | Radial menu |
+| `F9` | Radial menu |
 | `Ctrl` + `B` | Banking menu |
 | `Ctrl` + `H` | Toggle the money display |
-| `Ctrl` + `J` | Jobs and payroll |
 | `Delete` | Toggle the economy HUD |
 
 All bindings can be changed in the game's input settings. The phone key is also shown in the F1 help.
