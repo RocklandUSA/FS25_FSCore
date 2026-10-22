@@ -7,7 +7,7 @@ You are joining a game or a server that runs FSCore. Here is what to expect and 
 1. **Create your character.** The identity screen asks for a first and last name, a date of birth and a specialization (crop farmer, rancher, forester, mechanic, trucker or business owner). You also read the server's house rules here. On a server, the server name is shown at the top.
 2. **Meet your phone.** Press **/** (slash, or the numpad divide key) to open it. A short tour on the first start points you to it.
 3. **Open the Journey app.** It is pinned for new players: a first-day checklist with a reward for each step, from reading the welcome board to your first job, your first catch and joining a farm. Each step has a "Take me there" button that sets a map marker.
-4. **Earn your first money.** You start with a small cash amount. Mini jobs (deliveries and junk cleanup in the Haulie app), fishing and scavenging get you going until a farm hires you.
+4. **Earn your first money.** You start with a small cash amount. Mini jobs (deliveries and junk cleanup in the Giggit app), fishing and scavenging get you going until a farm hires you.
 
 ## The phone
 
@@ -16,7 +16,7 @@ You are joining a game or a server that runs FSCore. Here is what to expect and 
 | **Journey** | Your first-day checklist and rewards (new players) |
 | **Messages**, **Contacts**, **HamGram**, **FarmFeed** | Talk to other players, share photos and posts |
 | **Finances** | Wallet, bank accounts, loans, credit score, bills and invoices, taxes, payroll |
-| **Haulie** | Delivery and cleanup gigs with pay that scales with distance and cargo |
+| **Giggit** | Delivery and cleanup gigs with pay that scales with distance and cargo |
 | **Farm Manager** | Your farm's team, hiring, permissions and activity (owners and managers) |
 | **Identity** | Your ID card, licenses and training |
 | **Keys** | Vehicle keys and who may drive what |

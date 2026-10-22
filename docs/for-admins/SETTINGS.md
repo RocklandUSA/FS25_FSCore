@@ -33,7 +33,7 @@ Total: **58 rules**.
 | Module: Fishing | Rods, bait, fish buyers, marina boards and tournaments. | **ON** | on / off |
 | Module: Garage | Personal vehicle garage storage and transfers. | **ON** | on / off |
 | Module: Equipment Licenses | Vehicles need a license by class: cars for everyone, a Tractor License for everyday farm machines, a Heavy Equipment License for trucks, harvesters, forestry machines and anything over 300 hp or 12 t. Players apply in the phone ID card app (reputation + fee). Class map: modSettings/FS25_FSCore/licenses.xml. Admins bypass in multiplayer. | OFF | on / off |
-| Module: MiniJobs | Haulie gigs: parcel deliveries, junk cleanup and the delivery tables. | **ON** | on / off |
+| Module: MiniJobs | Giggit gigs: parcel deliveries, junk cleanup and the delivery tables. | **ON** | on / off |
 | Module: Pets | Farm dogs with needs, beds, bowls and farm duty. | **ON** | on / off |
 | Module: Phone | The smartphone (/ key): messages, contacts, bank, weather, notifications and every module app. | **ON** | on / off |
 | Module: Salvaging | Find, collect and sell salvage to the salvage buyer. | **ON** | on / off |
