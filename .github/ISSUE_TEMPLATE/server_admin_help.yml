@@ -1,12 +1,12 @@
 name: Server Admin Help
 description: You are setting up an FSCore server and have a question the docs did not cover.
 title: "[Admin] "
-labels: ["admin-help", "docs"]
+labels: ["admin-help", "documentation"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before filing, please check the [install guide](../blob/main/docs/for-admins/INSTALL.md), the [settings reference](../blob/main/docs/for-admins/SETTINGS.md) and the [console command reference](../blob/main/docs/for-admins/CONSOLE_COMMANDS.md). If the answer is there, great. If it is not, that is a documentation bug: file it here and we will improve the guide.
+        Before filing, please check the [install guide](../blob/main/docs/for-admins/INSTALL.md), the [community projects and map setup guide](../blob/main/docs/for-admins/COMMUNITY_PROJECTS.md), the [settings reference](../blob/main/docs/for-admins/SETTINGS.md) and the [console command reference](../blob/main/docs/for-admins/CONSOLE_COMMANDS.md). If the answer is there, great. If it is not, that is a documentation bug: file it here and we will improve the guide.
   - type: dropdown
     id: server_type
     attributes:

@@ -10,12 +10,12 @@ Open an issue with the [Bug Report template](https://github.com/RocklandUSA/FS25
 
 A useful bug report includes:
 
-- Your FSCore version (shown in the in-game mod menu and on the FSCore Settings page).
+- Your FSCore version (shown in the in-game mod menu, for example 1.0.0.0).
 - Your Farming Simulator 25 version.
 - Whether it happens in singleplayer, on a dedicated server, or both.
 - A short numbered list of steps to reproduce it.
-- The relevant lines from your `log.txt` (`Documents\My Games\FarmingSimulator2025\log.txt`).
-- For dedicated servers, the matching lines from the server log.
+- The relevant lines from your `log.txt` (Windows: `Documents\My Games\FarmingSimulator2025\log.txt`). FSCore keeps the log quiet in normal play; `fscLogLevel info` in the console turns its lines on while you reproduce the problem.
+- For dedicated servers, the matching lines from the server log, and the time it happened so the lines can be found.
 
 A five-line repro with a log excerpt usually gets a fix into the next ModHub update.
 
@@ -26,13 +26,13 @@ Open an issue with the [Feature Request template](https://github.com/RocklandUSA
 Requests are weighed against the design principles of the mod:
 
 - **Server-authoritative.** Every change is validated on the server; clients ask, the server decides.
-- **Vanilla-preserving by default.** Rules that change standard Farming Simulator behavior ship OFF; administrators opt in.
+- **The server owner decides.** Every module and every rule can be switched on or off on the FSCore Settings page.
 - **Family friendly.** FSCore is about farming, work, services and community life.
 - **One mod, optional modules.** New features should fit an existing module or be switchable off.
 
 ## 3. Server admin help
 
-Setting up a server and the [install guide](docs/for-admins/INSTALL.md), the [settings reference](docs/for-admins/SETTINGS.md) and the [console command reference](docs/for-admins/CONSOLE_COMMANDS.md) did not answer your question? Open an issue with the [Server Admin Help template](https://github.com/RocklandUSA/FS25_FSCore/issues/new?template=server_admin_help.yml). If the docs should have answered it, that is a documentation bug and we will fix the guide.
+Setting up a server and the [install guide](docs/for-admins/INSTALL.md), the [community projects guide](docs/for-admins/COMMUNITY_PROJECTS.md), the [settings reference](docs/for-admins/SETTINGS.md) and the [console command reference](docs/for-admins/CONSOLE_COMMANDS.md) did not answer your question? Open an issue with the [Server Admin Help template](https://github.com/RocklandUSA/FS25_FSCore/issues/new?template=server_admin_help.yml). If the docs should have answered it, that is a documentation bug and we will fix the guide.
 
 ## 4. Mod authors
 
@@ -43,6 +43,10 @@ Building a mod that talks to FSCore through its public API? Use the [Integration
 - Pull requests that add or change mod code. The mod source is closed.
 - Reverse-engineered or extracted mod code posted in issues or comments. That violates the [LICENSE](LICENSE) and the issue will be removed.
 - Support requests for other mods. If another mod calls FSCore incorrectly, please raise it on that mod's tracker first.
+
+## Quick questions
+
+For quick questions and to chat with other players and server owners, join the [FSCore Discord](https://discord.gg/xd9B6uSEjV).
 
 ## Code of conduct
 
