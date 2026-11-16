@@ -32,7 +32,7 @@ FS25_FSCoreServerLogo/
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="115">
+<modDesc descVersion="116">
     <author>Your community name</author>
     <version>1.0.0.0</version>
     <multiplayer supported="true"/>
