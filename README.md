@@ -22,6 +22,38 @@
 
 **Status:** FSCore **1.0.0.0** goes to GIANTS for ModHub review in November 2026. It is the first public release; once GIANTS approves it, it is downloaded from the official ModHub like any other mod. This repository holds the documentation and the public issue tracker. It does not contain the mod itself.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/01-campfire.jpg" width="100%" alt="Two players and their farm dogs relaxing round a campfire by their pick-up trucks">
+</p>
+
+<p align="center"><em>Downtime at the farm: camp chairs, a campfire and the farm dogs.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/02-homes-and-building.png" width="100%" alt="Homes and building: a furnished living room, a house frame going up, a home for sale, wall framing, a power washer, furniture placement, a Town Hall lot for sale, a chicken coop and painting a garden shed">
+</p>
+
+<p align="center"><em>Buy a home, furnish it, or build your own board by board.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/03-everyday-life.png" width="100%" alt="Everyday life: fishing from a boat, the pet adoption stand, the backpack, the crafting workbench, the mine, the My ID card, searching a bin, a vending machine and the collector's stall">
+</p>
+
+<p align="center"><em>Fishing, pets, crafting, the mine, scavenging and your own ID.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/04-community-and-town.png" width="100%" alt="The town: a community project board, refuelling at the pump, the tower crane and man basket, the car dealership, the welcome board, the bank ATM, the marina board, the co-op grain elevator and the self-storage yard">
+</p>
+
+<p align="center"><em>Build the town together: community projects, the dealership, the bank, the marina and more.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/05-jobs.png" width="100%" alt="Jobs: the time clock, propane delivery, the parcel van, the rollback tow truck, the mail round, the warehouse forklift, junk clean-up, power washing and bakery deliveries">
+</p>
+
+<p align="center"><em>Clock in and earn: Shiftit company shifts, Giggit gigs and deliveries.</em></p>
+
 ## Choose your path
 
 | Audience | What you will find |
